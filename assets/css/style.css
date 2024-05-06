@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: #faf3ec;
+  color: #0c0d0d;
+  padding: 10px 20px;
+  border-radius: 14px;
+  display: inline-block;
+}
+
+
+
+/* Footer styles */
+
+footer {
+  background-color: #999; /* Background color for the footer */
+  color: black; /* Text color for the footer */
+  padding: 20px; /* Add padding to the footer */
+  text-align: center; /* Align content to the center horizontally */
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  max-width: 800px; /* Set maximum width for content */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+.social-links {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding from the list */
+}
+
+.social-links li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 10px; /* Add margin between list items */
+}
+
+.social-links li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.social-links li a {
+  color: black; /* Text color for the links */
+  text-decoration: none; /* Remove underline from the links */
+}
+
+.social-links li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.author a {
+  margin-top: 20px;
+  color: black; /* Text color for the links */
+  text-decoration: none; /* Remove underline from the links */
+}
