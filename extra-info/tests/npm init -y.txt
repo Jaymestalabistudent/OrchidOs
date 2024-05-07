@@ -1,0 +1,10 @@
+how to use jest to run tests on a html page 
+using a little javascript to check for certain features
+
+npm init -y
+npm install --save-dev jest
+npm install jsdom
+create _test_ folder 
+create OrchidOs.test.js
+add code to OrchidOs.test.js
+npm tests 
