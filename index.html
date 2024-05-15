@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
+  <head>
     <!-- Head content here -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="OrchidOS ROM offers a customizable experience on Android devices." />
     <meta name="keywords" content="OrchidOS, custom ROM, Android, customization" />
     <meta name="author" content="The-projects" />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="7 days" />
     <title>OrchidOS Custom ROM</title>
-    <!-- Link to external CSS file -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Animate CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link to external CSS file -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- Personal Font Awesome (can also be installed through npm) -->
     <link rel="stylesheet" href="https://kit.fontawesome.com/eecaa5c4c7.js" crossorigin="anonymous" />
     <!-- jQuery (to be fully downloaded in the future) -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
-    <!-- Custom jQuery file -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>    <!-- Custom jQuery file -->
     <script src="assets/js/OrchidOsjQuery.js"></script>
     <!-- Debug script sample for console testing (to be disabled  in main branch) -->
-        <script>
-            window.addEventListener('load', () => {
-                console.log('Page loaded'); // Load check This message will appear in the browser console
-            });
-        </script>   
+    <script>
+      window.addEventListener("load", () => {
+        console.log("Page loaded"); // Load check This message will appear in the browser console
+      });
+    </script>
     <!-- End of debug script -->
-</head>
-<body>
-    <!-- Page content here -->
+  </head>
 
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="animate__animated animate__fadeInTopLeft navbar-brand ">OrchidOS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="info.html">Info</a>
+              </li>
+              <li class="nav-item"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/video/frontpage_background.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+      <h1>Its that simple</h1>
+      <p>
+        Discover a universe of tailor-made experiences crafted exclusively for
+        you. With our sleek interface, blazing-fast speeds, your device
+        transforms into a powerhouse of productivity, creativity, and
+        entertainment.
+      </p>
+      <button id="myBtn" class="animate__animated animate__fadeIn animate__infinite	infinite" onclick="myFunction()">Click Me!</button>
+    </div>
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous">
+    </script>
     <script src="assets/js/javascripts.js"></script>
-</body>
+  </body>
 </html>

@@ -1,14 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
+/* test  Font size classes */
+.font-small {
+  font-size: 14px;
 }
 
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  font-size: 2.5em;
-  color: #333;
+.font-medium {
+  font-size: 16px;
 }
+
+.font-large {
+  font-size: 58px;
+}
+
+.font-xlarge {
+  font-size: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/***** Video Background *****/ 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Set the video to appear behind other elements */
+}
+/***** End Section *****/
+
+
+/***** body *****/
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.705);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+.content p {
+  font-size: 25px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 14px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/***** End Section *****/
+/* Navbar styling */
+.navbar {
+  color: #352b2b; /* Font color */
+  font-family: "Roboto Flex", sans-serif;
+  background: rgba(0, 0, 0, 0.705);
+  font-weight: 600;
+
+}
+
+.navbar-brand {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 80px; /* Font size for brand */
+  color: #ffffff; /* Font color */
+}
+
+.nav-link{
+  font-size: 30px; /* Font size for links */
+  color: #ffffff; /* Font color */
+
+}
+.nav-link:hover{
+  font-size: 50px; /* Font size for links */
+  color: #d6d2c4; /* Font color on hover */
+
+}
+
+.navbar-toggler {
+  border-color: #472020; /* Border color for toggler */
+}
+
+.navbar-toggler-icon {
+  background-color: #1a1919; /* Color for toggler icon */
+}
+
+@media screen and (max-width: 400px){
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+/* TODO: research and test to find how to do this in landscape  */ 
+@media screen and (max-width: 400px) and (orientation: landscape) {
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+.navbar-nav .nav-link.active {
+  color: #ffffff; /* Font color when active */
+}
+
+.navbar-brand:hover {
+  color: #d6d2c4; /* Font color on hover */
+} 
+
+/* Navbar styling */
