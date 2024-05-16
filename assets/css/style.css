@@ -68,9 +68,10 @@
 /***** End Section *****/
 /* Navbar styling */
 .navbar {
-  color: #352b2b; /* Font color */
+  color: #000000; /* Font color */
   font-family: "Roboto Flex", sans-serif;
-  background: rgba(0, 0, 0, 0.705);
+  background: rgb(0, 0, 0);
+  opacity: 0.5;
   font-weight: 600;
 
 }
@@ -83,17 +84,17 @@
 
 .nav-link{
   font-size: 30px; /* Font size for links */
-  color: #ffffff; /* Font color */
+  color: #d6d2c4; /* Font color */
 
 }
 .nav-link:hover{
   font-size: 50px; /* Font size for links */
-  color: #d6d2c4; /* Font color on hover */
+  color: #ffffff; /* Font color on hover */
 
 }
 
 .navbar-toggler {
-  border-color: #472020; /* Border color for toggler */
+  border-color: #d6d2c4; /* Border color for toggler */
 }
 
 .navbar-toggler-icon {
@@ -107,11 +108,14 @@
 }
 
 /* TODO: research and test to find how to do this in landscape  */ 
+/* 
 @media screen and (max-width: 400px) and (orientation: landscape) {
   .navbar-toggler {
     display: none !important;
   }
 }
+*/
+
 .navbar-nav .nav-link.active {
   color: #ffffff; /* Font color when active */
 }
