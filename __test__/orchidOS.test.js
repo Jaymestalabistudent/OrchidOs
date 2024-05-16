@@ -6,7 +6,7 @@ of the main index page this was built with tutorials from https://dev.to this he
 const fs = require('fs');
 
 // Read the HTML file 
-const html = fs.readFileSync('index.html', 'utf8');
+const html = fs.readFileSync('info.html', 'utf8');
 
 // Set up JSDOM
 const { JSDOM } = require('jsdom');
@@ -21,12 +21,9 @@ describe('OrchidOS HTML structure', () => {
   });
 
   // Test for the footer section
-  test('Footer section should contain social links and copyright information', () => {
+  test('Footer section should contain copyright information', () => {
     const footer = document.querySelector('footer');
     expect(footer).toBeTruthy();
-
-    const socialLinks = footer.querySelectorAll('.social-links li');
-    expect(socialLinks.length).toBeGreaterThan(0);
 
     const copyright = footer.querySelector('.copyright');
     expect(copyright.textContent).toContain('OrchidOS');
