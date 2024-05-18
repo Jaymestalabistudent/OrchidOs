@@ -16,4 +16,4 @@ var btn = document.getElementById("myBtn");
 function myFunction() {
   // this will Redirect to info.html
   window.location.href = "info.html";
-}
+};

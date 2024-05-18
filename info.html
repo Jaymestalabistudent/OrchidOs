@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="OrchidOS ROM offers a customizable experience on Android devices." />
-    <meta name="keywords" content="OrchidOS, custom ROM, Android, customization" />
+    <meta name="keywords" content="information, OrchidOS, custom ROM, Android, customization" />
     <meta name="author" content="The-projects" />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="7 days" />
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>OrchidOS Custom ROM</title>
+    <title>OrchidOS info</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Animate CSS CDN -->
@@ -21,22 +21,23 @@
     <!-- Link to external CSS file -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- Personal Font Awesome (can also be installed through npm) -->
-    <link rel="stylesheet" href="https://kit.fontawesome.com/eecaa5c4c7.js" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/eecaa5c4c7.js" crossorigin="anonymous" >
     <!-- jQuery (to be fully downloaded in the future) -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>    
   </head>
 
   <body>
+   
+
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="animate__animated animate__fadeInTopLeft navbar-brand ">OrchidOS</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <button class="navbar-toggler-two" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
@@ -51,17 +52,59 @@
         </div>
       </nav>
     </header>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50 mt-lg-auto ">
-      <div class="copyright container text-center">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1 who we are"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2 our customizations"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3 privacy options "></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item carousel-item-orchidos active">
+      <div class="carousel-caption">
+        <h5>Be A Rebel</h5>
+        <p class="font-xlarge"> Think of OrchidOS as the rebel with a cause in the Android world. It's built on the foundation of Android Open Source Project, but with a twist..</p>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item-kactus">
+      <div class="carousel-caption">
+        <h5>Kactus</h5>
+        <p>Say hello to smoother multitasking, faster app launches, and optimized battery life. We've pruned away the bloatware and fine-tuned every aspect of the OS to ensure a snappy experience that keeps up with your fast-paced lifestyle</p>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item-google">
+      <div class="carousel-caption">
+        <h5>de-Googled</h5>
+        <p>With extended privacy options and reduced reliance on Google let your device bloom with Orchid OS</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+      <section class="py-5">
+      <div class="container">
+      <h1 class="fw-bold">What we do</h1>
+      <p class="lead font-medium">OrchidOS is all about empowering users with freedom, customization, and performance.<br>Whether you're a minimalist who prefers a sleek interface or a power user hungry for advanced settings, OrchidOS has got you covered.</p>
+    </section>
+    <footer id="sticky-footer" class="footer py-4 bg-dark text-white-50 mt-lg-auto ">
+      <div class="copyright  container text-center">
         <small>Copyright &copy; OrchidOS the Projects</small>
       </div>
     </footer>
+
+ 
     <!-- JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous">
     </script>
-    <script src="assets/js/javascripts.js"></script>
+    <script src="assets/js/javascripts.js"></script> 
   </body>
-</html>
+  </html>
