@@ -6,8 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.37);
-
+  background-color: rgba(148, 143, 143, 0.37);
 }
 /* test  Font size classes */
 .font-small {
@@ -83,15 +82,17 @@ body {
 .navbar {
   font-family: "Roboto Flex", sans-serif;
   background: rgb(0, 0, 0);
-  opacity: 0.9;
+  opacity: 0.8;
   font-weight: 600;
-
 }
 
 .navbar-brand {
   font-family: "Roboto Flex", sans-serif;
   font-size: 80px; /* Font size for brand */
-  color: white; /* Font color */
+  color: #0056b3; /* Font color */
+  letter-spacing: .25rem; 
+  padding-right: 15px;
+  font-weight: 600;
 }
 
 .nav-link{
@@ -102,7 +103,6 @@ body {
 .nav-link:hover{
   font-size: 50px; /* Font size for links */
   color: #ffffff; /* Font color on hover */
-
 }
 
 .navbar-toggler {
@@ -353,5 +353,76 @@ h5.card-title.text-muted-main.text-uppercase.text-center {
   font-family: 'Roboto Flex';
   -webkit-font-smoothing: auto;
   color: #0057b39a
+}
+/***** End Section *****/
+
+/***** Sales Product card styles *****/
+ .card.sales {
+  margin: 60px auto;
+  max-width: 500px;
+}
+
+.card.sales img {
+  width: 100%;
+  height: auto;
+  padding-top: 20px; /* Add padding to the top of the picture */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar-brand,
+  .card-title,
+  .card-text,
+  .btn {
+      font-size: 0.9rem;
+  }
+
+  .card.sales {
+      margin: 20px auto;
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+  .card.sales {
+      max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card.sales {
+      max-width: 100%;
+      min-height: 100%;
+  }
+
+  #productImage {
+    padding-top: 40px;
+      max-width: 80%;
+  }
+
+  .card-body.sales {
+    max-width: 70%;
+  }
+
+  .card-body.sales,
+  #productImage {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .card-body.sales {
+    padding: 10px;
+  }
+
+  .card-title.sales {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+/***** End Section *****/
+/***** saleskatstyles *****/
+#sales{
+background: url('../img/sales-bg.jpg') no-repeat center center fixed; /* URL to your background image */
+background-size: cover;
+}
 }
 /***** End Section *****/
