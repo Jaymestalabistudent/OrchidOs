@@ -41,3 +41,11 @@ $(document).ready(function() {
       $('#productImage').attr('src', imagePath);
   });
 });
+document.getElementById('contact-button').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = 'https://pdfupload.io/docs/04cf5edc'; 
+  link.target = '_blank'; // this action  Opens the PDF in a new tab
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
