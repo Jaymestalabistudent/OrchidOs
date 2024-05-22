@@ -426,89 +426,54 @@ background-size: cover;
 }
 }
 /***** End Section *****/
-#photos .row {
+#photos {
   display: flex;
   flex-wrap: wrap;
-  padding: 10 4px;
+  padding: 10px 4px;
 }
 
 #photos .column {
-  flex: 15%;
-  max-width: 50%;
-  padding: 10px;
+  flex: 1 0 16.66%; /* 100% / 6 = 16.66% */
+  max-width: 16.66%;
+  padding: 8px;
 }
 
 #photos .column img {
-  margin-top: 15px;
-  vertical-align: middle;
   width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* Responsive layout - makes the images stack in rows of two */
+@media screen and (max-width: 899px) {
   #photos .column {
-    flex: 50%;
+    flex: 1 0 50%;
     max-width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Responsive layout - makes the images stack on top of each other */
+@media screen and (max-width: 599px) {
   #photos .column {
-    flex: 100%;
+    flex: 1 0 100%;
     max-width: 100%;
   }
 }
+
 #gallery-bg {
   background-color: #000000;
-  }
-  
+}
 
-  .section-heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #0056b3;
-    padding-top: 10px;
-  }
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0056b3;
+  padding-top: 10px;
+}
 
-  #photos .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Responsive layout - adjust image size for larger screens */
-  @media screen and (min-width: 992px) {
-    #photos .column img {
-      max-width: 80%;
-    }
-  }
-  
-  #photos .column {
-    flex: 1;
-    max-width: 100%;
-    padding: 0 8px; /* Add padding between each image */
-  }
-  
-  #photos .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Reduce side margins of the section */
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  @media screen and (min-width: 992px) {
-    #photos .column {
-      max-width: 50%;
-    }
-  }
-  /***** End Section *****/
+.container.gallery-con {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
