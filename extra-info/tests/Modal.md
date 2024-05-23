@@ -1,11 +1,26 @@
-i will install http-server so i can run tests on my local machine and see the results in the browser
-npm install -g http-server
-then to run
-http-server
-the follow the localhost 
+To install `http-server` and run tests on your local machine, follow these steps:
 
-i will use log files and hAR files to log the before and after using my server 
-they will be in the offline-tests-results\modal-tests folder
-to view the files you can use https://toolbox.googleapps.com/apps/har_analyzer/
+1. **Install `http-server` globally**:
+   ```bash
+   npm install -g http-server
+   ```
 
-HAR is the short form for HTTP ARchive format, which tracks all the logging of a web browser's interaction with a site.
+2. **Run `http-server`**:
+   ```bash
+   http-server
+   ```
+
+3. **Access the local server**:
+   Open your web browser and navigate to the following URL:
+   ```
+   http://localhost:8080
+   ```
+   This will display the contents served by `http-server` on your local machine.
+
+4. **Using log files and HAR files**:
+   After running your tests, you can find the log files and HAR files in the `offline-tests-results/modal-tests` folder. These files contain detailed information about the interactions between your web browser and the served content.
+
+5. **Viewing HAR files**:
+   To view the HAR files, you can use tools like [Google's HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/). Simply upload the HAR file to the analyzer, and it will provide a detailed analysis of the interactions captured in the file.
+
+By following these steps, you can effectively test your content using `http-server` on your local machine and analyze the results using log files and HAR files.
