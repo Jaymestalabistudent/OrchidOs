@@ -37,49 +37,51 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main Navigation">
         <div class="container">
-          <a class="animate__animated animate__pulse navbar-brand ">OrchidOS</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <a class="animate__animated animate__pulse navbar-brand" href="#">OrchidOS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="info.html">Info</a>
+                <a class="nav-link" href="info.html" aria-label="Info">Info</a>
               </li>
               <li class="nav-item"></li>
               <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="gallery.html" aria-label="Gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sales.html">Sales</a>
+                <a class="nav-link" href="sales.html" aria-label="Sales">Sales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact</a>
+                <a class="nav-link" href="contactus.html" aria-label="Contact Us">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-<main id="first-page-main">
-    <video autoplay muted loop id="myVideo">
-      <source src="assets/video/frontpage_background.mp4" type="video/mp4" >
-      Your browser does not support HTML5 video.
-    </video>
-
-    <div class="content">
-      <h1>Its that simple</h1>
-      <p>
-        Discover a universe of tailor-made experiences crafted exclusively for
-        you. With our sleek interface, blazing-fast speeds, your device
-        transforms into a powerhouse of productivity, creativity, and
-        entertainment.
-      </p>
-      <button id="myBtn" class="animate__animated animate__fadeIn animate__infinite	infinite" onclick="myFunction()">Click Me!</button>
-    </div>
-</main>
+  
+    <main id="first-page-main">
+      <video autoplay muted loop id="myVideo" aria-label="Background Video">
+        <source src="assets/video/frontpage_background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+  
+      <div class="content">
+        <h1>Its that simple</h1>
+        <p>
+          Discover a universe of tailor-made experiences crafted exclusively for
+          you. With our sleek interface, blazing-fast speeds, your device
+          transforms into a powerhouse of productivity, creativity, and
+          entertainment.
+        </p>
+        <button id="myBtn" class="animate__animated animate__fadeIn animate__infinite infinite" onclick="myFunction()" aria-label="Click me button">Click Me!</button>
+      </div>
+    </main>
+  
     <!-- JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
@@ -88,4 +90,5 @@
     </script>
     <script src="assets/js/javascripts.js"></script>
   </body>
+  
 </html>

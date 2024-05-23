@@ -27,101 +27,99 @@
   </head>
 
   <body>
-   
-
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main Navigation">
         <div class="container">
-          <a class="animate__animated animate__pulse navbar-brand ">OrchidOS</a>
-          <button class="navbar-toggler-two" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <a class="animate__animated animate__pulse navbar-brand" href="#">OrchidOS</a>
+          <button class="navbar-toggler-two" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="gallery.html" aria-label="Gallery">Gallery</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="sales.html">Sales</a>
+                <a class="nav-link" href="sales.html" aria-label="Sales">Sales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact</a>
+                <a class="nav-link" href="contactus.html" aria-label="Contact Us">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+  
     <main id="front-page">
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1 who we are"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2 our customizations"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3 privacy options "></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item carousel-item-orchidos active">
-      <div class="carousel-caption">
-        <h5>Be A Rebel</h5>
-        <p class="font-xlarge"> Think of OrchidOS as the rebel with a cause in the Android world. It's built on the foundation of Android Open Source Project, but with a twist..</p>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Who We Are"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2: Our Customizations"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3: Privacy Options"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item-orchidos active">
+            <div class="carousel-caption">
+              <h5>Be A Rebel</h5>
+              <p class="font-xlarge">Think of OrchidOS as the rebel with a cause in the Android world. It's built on the foundation of Android Open Source Project, but with a twist.</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-kactus">
+            <div class="carousel-caption">
+              <h5>Kactus</h5>
+              <p>Say hello to smoother multitasking, faster app launches, and optimized battery life. We've pruned away the bloatware and fine-tuned every aspect of the OS to ensure a snappy experience that keeps up with your fast-paced lifestyle.</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-google">
+            <div class="carousel-caption">
+              <h5>de-Googled</h5>
+              <p>With extended privacy options and reduced reliance on Google, let your device bloom with Orchid OS.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-    <div class="carousel-item carousel-item-kactus">
-      <div class="carousel-caption">
-        <h5>Kactus</h5>
-        <p>Say hello to smoother multitasking, faster app launches, and optimized battery life. We've pruned away the bloatware and fine-tuned every aspect of the OS to ensure a snappy experience that keeps up with your fast-paced lifestyle</p>
-      </div>
-    </div>
-    <div class="carousel-item carousel-item-google">
-      <div class="carousel-caption">
-        <h5>de-Googled</h5>
-        <p>With extended privacy options and reduced reliance on Google let your device bloom with Orchid OS</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  </div>
+  
       <section class="py-5">
-      <div class="container">
-      <h1 class="fw-bold">What we do</h1>
-      <p class="lead font-medium">OrchidOS is all about empowering users with freedom, customization, and performance.<br>Whether you're a minimalist who prefers a sleek interface or a power user hungry for advanced settings, OrchidOS has got you covered.</p>
-<!-- Trigger/Open The Modal -->
-<button id="openModalBtn" class="indexmodal">More Info</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div id="modalText">Loading...</div>
-  </div>
-</div>
-    </div>
-    </section>
+        <div class="container">
+          <h1 class="fw-bold">What we do</h1>
+          <p class="lead font-medium">OrchidOS is all about empowering users with freedom, customization, and performance. Whether you're a minimalist who prefers a sleek interface or a power user hungry for advanced settings, OrchidOS has got you covered.</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="openModalBtn" class="indexmodal" aria-label="More Information">More Info</button>
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal" aria-describedby="modalText">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close" >&times;</span>
+              <div id="modalText">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer id="sticky-footer" class="footer py-4 bg-dark text-white-50 mt-md-auto">
+  
+    <footer id="sticky-footer" class="footer py-4 bg-dark text-white-50 mt-md-auto" aria-label="Footer">
       <div class="container text-center">
-        <div >
-        <small>Copyright &copy; OrchidOS </small>
+        <div>
+          <small>Copyright &copy; OrchidOS</small>
+        </div>
       </div>
-    </div>
     </footer>
-
+  
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="assets/js/mondal.js"></script>
     <script src="assets/js/javascripts.js"></script> 
   </body>
+  
   </html>

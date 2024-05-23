@@ -23,81 +23,84 @@
      <!-- Personal Font Awesome (can also be installed through npm) -->
      <script src="https://kit.fontawesome.com/afc3937dbc.js" crossorigin="anonymous"></script>   
     </head>
-<body id="sales">
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="animate__animated animate__pulse navbar-brand ">OrchidOS</a>
-        <button class="navbar-toggler-two" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../sales.html">Sales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contactus.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <main id="sales-prodect-page-two"> 
-<!-- Product Section -->
-<section id="product" class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card sales">
-        <div class="row g-0">
-          <div class="col-md-6 col-lg-5" id="productImageContainer">
-            <img src="../assets/img/xiaomi.jpg" class="card-img-top" alt="Product Image" id="productImage">
-          </div>
-          <div class="col-md-6 col-lg-7">
-            <div class="card-body sales">
-              <h5 class="card-title sales">Kathaleya Edition</h5>
-              <p class="card-text sales">Kathaleya is Your Ticket to a De-googled Android Adventure!<br>
-                Using MicroG as a magic wand for those seeking an alternative to Google's suite of apps and services.<br>
-                <strong>Below are three devices Just for you</strong></p>
-                <h3 class="animate__animated animate__pulse animate__infinite	infinite">Only £270</h3>
-              <div class="form-group">
-                <label for="modelSelect"><small>Select Model:</small></label>
-                <select class="form-control" id="modelSelect">
-                  <option value="xiaomi">Mi 11 5G</option>
-                  <option value="nothing-phone-2">Nothing Phone 2</option>
-                  <option value="pixel">Pixel 4A</option>
-                </select>
-              </div>
-              <button class="btn btn-primary mt-3" id="addToCartBtn">Add to Basket</button>
-              <button class="btn btn-info mt-3" id="moreInfoBtn" onclick="window.location.href='https://microg.org/'">MicroG Info</button>
+    <body id="sales">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main Navigation">
+          <div class="container">
+            <a class="animate__animated animate__pulse navbar-brand" href="#">OrchidOS</a>
+            <button class="navbar-toggler-two" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../gallery.html" aria-label="Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sales.html" aria-label="Sales">Sales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../contactus.html" aria-label="Contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+      </header>
+    
+      <main id="sales-prodect-page-two">
+        <!-- Product Section -->
+        <section id="product" class="container my-5" aria-label="Product Section">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="card sales">
+                <div class="row g-0">
+                  <div class="col-md-6 col-lg-5" id="productImageContainer">
+                    <img src="../assets/img/xiaomi.jpg" class="card-img-top" alt="Kathaleya Edition Product Image" id="productImage">
+                  </div>
+                  <div class="col-md-6 col-lg-7">
+                    <div class="card-body sales">
+                      <h5 class="card-title sales">Kathaleya Edition</h5>
+                      <p class="card-text sales">
+                        Kathaleya is Your Ticket to a De-googled Android Adventure!<br>
+                        Using MicroG as a magic wand for those seeking an alternative to Google's suite of apps and services.<br>
+                        <strong>Below are three devices Just for you</strong>
+                      </p>
+                      <h3 class="animate__animated animate__pulse animate__infinite infinite">Only £270</h3>
+                      <div class="form-group">
+                        <label for="modelSelect"><small>Select Model:</small></label>
+                        <select class="form-control" id="modelSelect" aria-label="Select Model">
+                          <option value="xiaomi">Mi 11 5G</option>
+                          <option value="nothing-phone-2">Nothing Phone 2</option>
+                          <option value="pixel">Pixel 4A</option>
+                        </select>
+                      </div>
+                      <button class="btn btn-primary mt-3" id="addToCartBtn" aria-label="Add to Basket">Add to Basket</button>
+                      <button class="btn btn-info mt-3" id="moreInfoBtn" onclick="window.location.href='https://microg.org/'" aria-label="More Information about MicroG">MicroG Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <footer id="sticky-footer" class="footer py-4 bg-dark text-white-50 mt-md-auto" aria-label="Footer">
+        <div class="container text-center">
+          <div>
+            <a href="https://t.me/orchidrom" class="btn btn-custom-telegram btn-lg mx-1" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
+            <small>Copyright &copy; OrchidOS</small>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-  
-<footer id="sticky-footer" class="footer py-4 bg-dark text-white-50 mt-md-auto">
-  <div class="container text-center">
-    <div >
-      <a href="https://t.me/orchidrom" class="btn btn-custom-telegram btn-lg mx-1" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
-    <small>Copyright &copy; OrchidOS </small>
-  </div>
-</div>
-</footer>
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  <script src="../assets/js/javascripts.js"></script>
-    <!-- Product JavaScript -->
-  <script src="../assets/js/product.js"></script>
-</body>
+      </footer>
+    
+      <!-- JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="../assets/js/javascripts.js"></script>
+      <!-- Product JavaScript -->
+      <script src="../assets/js/product.js"></script>
+    </body>
+    
 </html>
