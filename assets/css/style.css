@@ -110,7 +110,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-color: #d6d2c4; /* Color for toggler icon */
+  background-color: #141413; /* Color for toggler icon */
 }
 /* media query's for different dimensions */
 @media screen and (max-width: 400px){
@@ -151,6 +151,18 @@ body {
   width: 100%;
   color: white;
   text-align: center;
+}
+
+.btn-custom-telegram {
+  background-color: #0088cc;
+  border-color: #0088cc;
+  color: white;
+}
+
+.btn-custom-instagram {
+  background-color: #0088cc;
+  border-color: #0088cc;
+  color: white;
 }
 /***** End Section *****/
 /***** Carousel item classes *****/
