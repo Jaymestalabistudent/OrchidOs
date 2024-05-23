@@ -110,7 +110,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-color: #1a1919; /* Color for toggler icon */
+  background-color: #d6d2c4; /* Color for toggler icon */
 }
 /* media query's for different dimensions */
 @media screen and (max-width: 400px){
@@ -250,7 +250,7 @@ body {
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: #d6d2c4;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -354,6 +354,11 @@ h5.card-title.text-muted-main.text-uppercase.text-center {
   -webkit-font-smoothing: auto;
   color: #0057b39a
 }
+
+.py-5.sales-page
+{
+  background-color: #d6d2c4;
+}
 /***** End Section *****/
 
 /***** Sales Product card styles *****/
@@ -426,6 +431,7 @@ background-size: cover;
 }
 }
 /***** End Section *****/
+/***** Gallery-styles-css *****/
 #photos {
   display: flex;
   flex-wrap: wrap;
@@ -435,13 +441,14 @@ background-size: cover;
 #photos .column {
   flex: 1 0 16.66%; /* 100% / 6 = 16.66% */
   max-width: 16.66%;
-  padding: 8px;
+  padding: 15px;
 }
 
 #photos .column img {
   width: 100%;
   height: auto;
   display: block;
+  padding-bottom: 15px;
 }
 
 /* Responsive layout - makes the images stack in rows of two */
@@ -477,3 +484,50 @@ background-size: cover;
   margin-right: auto;
   margin-left: auto;
 }
+
+
+/* Contact Us Section */
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Ensure the section takes full viewport height */
+}
+
+.contact-us .card {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visual appearance */
+}
+
+/* Make contact section scrollable on devices between 780px and 1180px */
+@media screen and (min-width: 780px) and (max-width: 1180px) {
+  .contact-us {
+    overflow-y: auto;
+    max-height: 40vh; /* Adjust as necessary */
+  }
+
+  .contact-us .card {
+    margin-left: 15%; /* Adjust margin on the left as needed to move further to the right */
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .contact-us .card {
+    margin-left: auto; /* Auto margin on the left to push the card to the right */
+    margin-right: auto; /* Center the card horizontally */
+  }
+}
+.lead-contact {
+  font-size: 1.50rem;
+  font-weight: 500;
+  font-family: 'Roboto Flex';
+  text-align: center;
+}
+  .contactus {
+  font-family: 'Roboto Flex';
+  text-align: center;
+  -webkit-font-smoothing: auto;
+  color: #0056b3
+}
+/***** End Section *****/
