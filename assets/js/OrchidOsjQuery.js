@@ -1,4 +1,4 @@
 // Code to get the IP address of the user
-   $.get('http://jsonip.com', function(data) {
+   $.get('https://jsonip.com', function(data) {
        console.log(data.ip);
    });
